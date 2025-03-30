@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "SynthStyle",
+  "version": "1.0",
+  "description": "AI-powered virtual try-on with sustainable fashion verification",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "camera",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.amazon.com/*",
+    "https://*.amazon.co.uk/*",
+    "https://*.amazon.de/*",
+    "https://*.amazon.fr/*",
+    "https://*.amazon.it/*",
+    "https://*.amazon.es/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.amazon.com/*", "https://*.amazon.co.uk/*", "https://*.amazon.de/*", "https://*.amazon.fr/*", "https://*.amazon.it/*", "https://*.amazon.es/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+} 

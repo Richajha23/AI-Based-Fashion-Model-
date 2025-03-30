@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SynthStyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SynthStyle</h1>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="SynthStyle Logo" class="logo">
+            </div>
+        </header>
+
+        <main>
+            <div class="feature-card try-on">
+                <h2>Virtual Try-On</h2>
+                <button id="startTryOn" class="animated-button">
+                    <span class="button-content">
+                        <i class="fas fa-tshirt"></i>
+                        Start Try-On
+                    </span>
+                    <div class="ripple"></div>
+                </button>
+            </div>
+
+            <div class="feature-card scan">
+                <h2>Body Scan</h2>
+                <button id="startScan" class="animated-button">
+                    <span class="button-content">
+                        <i class="fas fa-camera"></i>
+                        Scan Body
+                    </span>
+                    <div class="ripple"></div>
+                </button>
+            </div>
+
+            <div class="feature-card verify">
+                <h2>Sustainability Check</h2>
+                <div class="verification-status">
+                    <div class="status-indicator"></div>
+                    <span>Verification Active</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Items Verified</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Try-Ons</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html> 
